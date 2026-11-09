@@ -1,0 +1,37 @@
+{
+  "name": "dsh-emotion-self",
+  "version": "0.2.1",
+  "description": "表达层插件：给你的助手一份语气档案，写评论/私信/文档前先用 emotion_check 过一遍（去机器腔、按场合调松紧、可配置否决）。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./manifest.json": "./manifest.json",
+    "./pipeline": "./lib/emotion/self/pipeline.js",
+    "./profile": "./lib/emotion/self/profile.js"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "manifest.json",
+    "config.schema.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "dsh": {
+    "manifest": "./manifest.json"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "dsh",
+    "deepseek-harness",
+    "emotion",
+    "tone",
+    "chinese"
+  ],
+  "license": "MIT",
+  "private": false
+}

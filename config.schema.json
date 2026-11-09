@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "title": "情绪模块 · 否决配置",
+  "description": "放在工作区 数据/情绪配置.json。不建这个文件 = 零拦截，一条都不管。",
+  "type": "object",
+  "properties": {
+    "veto": {
+      "type": "object",
+      "properties": {
+        "block": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "硬拦的规则名，见 lib/emotion/veto.js 里的 RULES"
+        },
+        "warn": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "只提示不拦的规则名"
+        },
+        "fixes": {
+          "type": "object",
+          "description": "替代说法：{ 规则名: { from, to } }"
+        },
+        "custom": {
+          "type": "array",
+          "description": "自定义规则 [{ id, re, level, why, fix }]"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
