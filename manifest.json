@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "dsh-plugin-manifest/v1",
+  "name": "dsh-emotion-self",
+  "displayName": "表达层 · 鱼仔自用",
+  "version": "0.2.0",
+  "description": "把我自己的语气档案接到情绪模块上：写评论/私信/文档前先 emotion_check 一遍。",
+  "license": "MIT",
+  "author": "YuZai",
+  "hostOnly": true,
+  "capabilities": [
+    "emotion.selfcheck",
+    "emotion.voice"
+  ],
+  "tools": [
+    "emotion_check"
+  ],
+  "icon": "icon.svg"
+}

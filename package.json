@@ -1,0 +1,19 @@
+{
+  "name": "dsh-emotion-self",
+  "version": "0.2.0",
+  "description": "鱼仔自用表达层：把我的语气档案接到情绪模块上，写东西前先过一遍（emotion_check）。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./manifest.json": "./manifest.json",
+    "./pipeline": "./lib/emotion/self/pipeline.js",
+    "./profile": "./lib/emotion/self/profile.js"
+  },
+  "dsh": {
+    "manifest": "./manifest.json"
+  },
+  "license": "MIT",
+  "private": true
+}
